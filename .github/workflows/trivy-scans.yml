@@ -8,10 +8,8 @@ on:
     paths:
       - '.github/workflows/trivy-scans.yml'
       - '.trivyignore'
-
 permissions:
   contents: read
-
 jobs:
   trivy-fs-scan:
     # Use 20.04.5 until https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16450 is resolved

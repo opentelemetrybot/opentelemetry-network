@@ -8,10 +8,8 @@ on:
   pull_request:
     paths:
       - '.github/workflows/snyk-scans.yml'
-
 permissions:
   contents: read
-
 jobs:
   snyk-scan:
     runs-on: ubuntu-24.04

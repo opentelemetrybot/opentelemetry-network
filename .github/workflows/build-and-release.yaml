@@ -34,10 +34,8 @@ on:
         required: false
         type: boolean
         default: false
-
 permissions:
   contents: read
-
 env:
   BENV_IMAGE: docker.io/otel/opentelemetry-network-build-tools
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
