@@ -12,6 +12,11 @@ on:
 jobs:
   snyk-scan:
     runs-on: ubuntu-24.04
+    permissions:
+      # Needed for uploading SARIF results to GitHub Code Scanning
+      security-events: write
+      # Needed to checkout the repository
+      contents: read
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       
